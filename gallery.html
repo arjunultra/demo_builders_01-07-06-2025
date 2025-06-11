@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head itemscope itemtype="http://www.schema.org/website">
+    <title>Demo Builders| Modern Construction Solutions</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="https://.com" />
+    <meta
+      property="og:image"
+      content="https://.com/images/android-icon-192x192.png"
+    />
+    <meta name="keywords" content="" />
+    <meta property="og:description" name="description" content="" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="10 Days" />
+    <meta name="copyright" content="" />
+    <meta name="language" content="English" />
+    <meta name="distribution" content="Global" />
+    <meta name="web_author" content="srisoftwarez.com" />
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-icon-72x72.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-icon-192x192.png" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/odometer-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <!-- header -->
+    <!-- Header Section -->
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-construction">
+      <div class="container-fluid">
+        <!-- Logo/Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.webp" alt="Company Logo" class="nav-logo" />
+          <span class="brand-text text-white">Demo <span>Builders</span></span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#constructionNav"
+          aria-controls="constructionNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Content -->
+        <div class="collapse navbar-collapse" id="constructionNav">
+          <!-- Main Navigation -->
+          <ul class="navbar-nav nav-main mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+           <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="residential-construction.html"
+                  >Residential Construction</a
+                >
+                <a class="dropdown-item" href="commercial-construction.html"
+                  >Commercial Construction</a
+                >
+                <a class="dropdown-item" href="building-renovation.html"
+                  >Building Renovation</a
+                >
+                <a class="dropdown-item" href="industrial-construction.html"
+                  >Industrial Construction</a
+                >
+                <a class="dropdown-item" href="corporate-construction.html"
+                  >Corporate Construction</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Contact Button -->
+          <div class="nav-contact">
+            <a href="contact.php" class="btn btn-contact">
+              <i class="bi bi-telephone-fill"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- gallery banner -->
+    <section class="gallery-section" title="BuildPlus Construction">
+      <div
+        class="gallery-banner d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="text-container wow slideInLeft">
+          <h1 class="gallery-heading wow zoomInRight">
+            <span class="font-weight-bold">
+              Explore Our <span class="text-accent">Project Gallery</span>
+            </span>
+          </h1>
+          <p class="gallery-subheading">
+            Take a look at our
+            <span class="text-accent">completed works</span> — showcasing
+            precision, quality, and dedication.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <!-- Gallery Section -->
+    <section class="gallery-section-page py-5">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="row">
+          <div class="col-12">
+            <div class="gallery-header text-center mb-5">
+              <h1 class="gallery-title">Our Projects Gallery</h1>
+              <p class="gallery-subtitle">
+                Explore our completed construction and real estate projects
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="row">
+          <div class="col-12">
+            <div class="gallery-filters text-center mb-4">
+              <button class="filter-btn active" data-filter="all">
+                All Projects
+              </button>
+              <button class="filter-btn" data-filter="residential">
+                Residential
+              </button>
+              <button class="filter-btn" data-filter="commercial">
+                Commercial
+              </button>
+              <button class="filter-btn" data-filter="industrial">
+                Industrial
+              </button>
+              <button class="filter-btn" data-filter="renovation">
+                Renovation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row gallery-grid" id="galleryGrid">
+          <!-- Project 1 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="residential"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop"
+                  alt="Modern Family Home"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Modern Family Home</h5>
+                    <p class="project-category">Residential</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="1"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="commercial"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop"
+                  alt="Office Complex"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Corporate Office Complex</h5>
+                    <p class="project-category">Commercial</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="2"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="industrial"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop"
+                  alt="Manufacturing Facility"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Manufacturing Facility</h5>
+                    <p class="project-category">Industrial</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="3"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="residential"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop"
+                  alt="Luxury Villa"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Luxury Villa</h5>
+                    <p class="project-category">Residential</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="4"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="renovation"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop"
+                  alt="Kitchen Renovation"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Kitchen Renovation</h5>
+                    <p class="project-category">Renovation</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="5"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="commercial"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1555636222-cae831e670b3?w=400&h=300&fit=crop"
+                  alt="Shopping Center"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Shopping Center</h5>
+                    <p class="project-category">Commercial</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="6"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="residential"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop"
+                  alt="Apartment Complex"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Apartment Complex</h5>
+                    <p class="project-category">Residential</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="7"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="industrial"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop"
+                  alt="Warehouse Complex"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Warehouse Complex</h5>
+                    <p class="project-category">Industrial</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="8"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div
+            class="col-12 col-md-6 col-lg-4 gallery-item"
+            data-category="renovation"
+          >
+            <div class="gallery-card">
+              <div class="gallery-image">
+                <img
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop"
+                  alt="Bathroom Renovation"
+                  class="img-fluid"
+                />
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h5 class="project-title">Bathroom Renovation</h5>
+                    <p class="project-category">Renovation</p>
+                    <button
+                      class="view-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      data-project="9"
+                    >
+                      <i class="bi bi-eye"></i> View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <a href="contact.php">
+              <button class="load-more-btn" id="loadMoreBtn">
+                <i class="bi bi-plus-circle"></i> Load More Projects
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="projectModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            <!-- Project details will be loaded here via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description Column -->
+          <div class="col-lg-3 col-md-6 col-12 footer-col">
+            <div class="footer-logo mb-4">
+              <img
+                src="images/logo.webp"
+                width="234"
+                height="78"
+                alt="BuildPlus Logo"
+                class="img-fluid"
+              />
+            </div>
+            <p class="footer-description">
+              Our post-construction services give you peace of mind knowing that
+              we are still here for you even after project completion.
+            </p>
+          </div>
+
+          <!-- Services Column -->
+          <div class="col-lg-3 col-md-6 col-12 footer-col">
+            <h3 class="footer-heading">Our Services</h3>
+            <ul class="footer-menu mx-auto">
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i>
+                <a href="services/building-construction/"
+                  >Building Construction</a
+                >
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i>
+                <a href="services/architecture-design/">Architecture Design</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i>
+                <a href="services/building-renovation/">Building Renovation</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i>
+                <a href="services/flooring-roofing/">Flooring & Roofing</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i>
+                <a href="services/building-maintenance/"
+                  >Building Maintenance</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company Column -->
+          <div class="col-lg-3 col-md-6 col-12 footer-col">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-menu mx-auto">
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i
+                ><a href="index.html">Home</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i
+                ><a href="about.html">About</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i
+                ><a href="services.html">Services</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i
+                ><a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill text-yellow mr-2"></i
+                ><a href="contact.php">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="col-lg-3 col-md-6 col-12 footer-col">
+            <h3 class="footer-heading">Contact Us</h3>
+            <div class="contact-info mx-auto w-75">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="tel:+919999999999">+91 99999 99999</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="mailto:info@domain.com">info@demobuilders.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="contact-text">
+                  Demo Builders,Demo Street,Demo Colony,Sivakasi,IN
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+              <p class="copyright">
+                Copyright © 2024 Demo Builders. All Rights Reserved.
+              </p>
+              <p>
+                Crafted with Precision by
+                <a
+                  class="text-yellow"
+                  target="_blank"
+                  href="https://www.srisoftwarez.com/"
+                  >Sri Softwarez</a
+                >
+              </p>
+            </div>
+            <div class="col-md-6 col-12">
+              <ul class="social-media">
+                <li>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="bi bi-twitter-x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fixed point w0">
+      <a
+        href="https://api.whatsapp.com/send?phone=919999999999&text=Hello%20Demo%20Builders!%20I%20want%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+      >
+        <img
+          src="images/whatsappicon.png"
+          class="priceicn float-left"
+          alt=""
+          title="demo builders"
+        />
+      </a>
+    </div>
+    <div class="fixed point1 w0 d-none d-lg-block">
+      <span class="time-of-year">
+        <img
+          src="images/callicon.png"
+          class="priceicn float-left"
+          alt=""
+          title="demo builders"
+        />
+        <div class="tooltip text-white carter text-center">
+          For More Details Call <br />
+          <i class="fa fa-phone text-white"></i> +91 99999 99999
+        </div>
+      </span>
+    </div>
+    <div class="fixed point1 w0 d-lg-none">
+      <a href="tel:+919999999999">
+        <img
+          src="images/callicon.png"
+          class="priceicn float-left"
+          alt=""
+          title=""
+        />
+      </a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
