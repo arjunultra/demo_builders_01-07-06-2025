@@ -137,7 +137,7 @@ li {
   left: 15px;
   width: 0;
   height: 2px;
-  background-color: var(--color-1);
+  /* background-color: var(--color-1); */
   transition: width 0.3s;
 }
 
@@ -164,6 +164,8 @@ li {
 .navbar-construction .dropdown-menu {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* display: block; */
+  margin-top: 0;
 }
 
 .navbar-construction .dropdown-item {
@@ -235,11 +237,11 @@ li {
   }
 
   .navbar-construction .navbar-collapse {
-    background-color: var(--color-3);
     padding: 15px;
     margin-top: 10px;
     border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #000000f4;
   }
 
   .navbar-construction .nav-item {
@@ -267,6 +269,10 @@ li {
   .navbar-construction .btn-contact {
     display: block;
     text-align: center;
+  }
+  nav.navbar-construction .navbar-nav.nav-main {
+    align-items: center;
+    justify-content: center;
   }
 }
 /* index swiper styles */
@@ -714,6 +720,9 @@ li {
     width: 100%;
     justify-content: center;
   }
+  .welcome-section .welcome-features {
+    padding: 0;
+  }
 }
 /* index two Our Services */
 /* Our Services Section Styles */
@@ -993,7 +1002,7 @@ li {
 
 .whychoose-section .text-card:hover .whychoose-card {
   background-color: var(--color-2);
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -1105,14 +1114,29 @@ li {
   .whychoose-section {
     padding: 80px 0;
   }
+  .whychoose-section .section-header {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
 
   .whychoose-section .image-card .whychoose-card,
   .whychoose-section .text-card .whychoose-card {
-    height: 300px;
+    height: 400px;
   }
 
   .whychoose-section .text-card .whychoose-card {
-    padding: 30px;
+    padding: 25px;
+  }
+  /* Font size adjustments */
+  .whychoose-section .card-title {
+    font-size: 20px;
+  }
+
+  .whychoose-section .card-text {
+    font-size: 14px;
+  }
+  .whychoose-section .odometer {
+    font-size: 30px;
   }
 }
 
@@ -1129,6 +1153,10 @@ li {
 
   .whychoose-section .text-card .whychoose-card {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .whychoose-section .card-title {
@@ -1318,6 +1346,18 @@ li {
   padding: 10px 60px;
   padding-bottom: 0;
 }
+/* Mobile Styles */
+@media (min-width: 1px) and (max-width: 767.98px) {
+  .index-cta {
+    padding: 0;
+  }
+  .index-cta h2 {
+    font-size: 2rem;
+  }
+  .index-cta .theme-button {
+    margin-bottom: 0.5em;
+  }
+}
 /* index page ends */
 /* About Section Styles - Scoped to .about-section */
 .about-section {
@@ -1416,6 +1456,14 @@ section.about-history {
   background-attachment: fixed;
   animation: translateX 6s ease-in-out infinite alternate;
   /* background-color: var(--color-1); */
+}
+@media (min-width: 1px) and (max-width: 767.98px) {
+  .about-history .year-text {
+    font-size: 1rem !important;
+  }
+  .about-history .year-subtext {
+    font-size: 0.5rem !important;
+  }
 }
 /* vision,mission,values */
 .vision-mission-values {
@@ -4834,6 +4882,12 @@ section.about-history {
 @media (min-width: 1px) and (max-width: 767.98px) {
   .footer-section {
     padding: 40px 0 20px;
+  }
+  .footer-section .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .footer-section .footer-col {
     display: flex;

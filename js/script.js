@@ -592,7 +592,7 @@ $(document).ready(function () {
         function () {
             $(this).find('.whychoose-card').css({
                 'background-color': 'var(--color-2)',
-                'transform': 'translateY(-5px)'
+                // 'transform': 'translateY(-5px)'
             });
             $(this).find('.card-icon, .card-title, .odometer').css('color', 'var(--color-3)');
             $(this).find('.card-text, .counter-text').css('color', 'rgba(255, 255, 255, 0.8)');
@@ -814,3 +814,22 @@ document.addEventListener('DOMContentLoaded', function() {
       lastScrollTop = scrollTop;
     });
   });
+  // dropdown on mouse hover
+ $(document).ready(function () {
+    // Apply hover behavior only on larger screens (desktop)
+    if (window.innerWidth > 991) {
+      $('.navbar .dropdown').hover(
+        function () {
+          $(this).addClass('show');
+          $(this).find('.dropdown-toggle').attr('aria-expanded', 'true');
+          $(this).find('.dropdown-menu').addClass('show');
+        },
+        function () {
+          $(this).removeClass('show');
+          $(this).find('.dropdown-toggle').attr('aria-expanded', 'false');
+          $(this).find('.dropdown-menu').removeClass('show');
+        }
+      );
+    }
+  });
+
